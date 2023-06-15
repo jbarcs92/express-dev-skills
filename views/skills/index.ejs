@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What developer skills have I learned?</title>
+</head>
+<body>
+    <main>
+        
+        <h1>What developer skills have I learned?</h1>
+
+        <ul>
+            <% skills.forEach(function(e) { %>
+                <li>
+                    <a href="/skills/<%= e.id %>"><%= e.skill %></a>
+                </li>
+            <% }); %>
+        </ul>
+    </main>
+</body>
+</html>
